@@ -1,1 +1,46 @@
+SPECTRA RADAR 360 - REPRESENTATIVE SERIAL TRANSCRIPT
+=====================================================
+
+NOTE:
+This is a representative protocol transcript based on the firmware format.
+It is not a claim that these values were captured during a completed physical
+bench test. Replace it with a real log when hardware validation is performed.
+
+Arduino startup -> Python:
+READY,SPECTRA_RADAR_360
+INFO,Send LIMIT,2..400; SPEED,1..10; HOLD,2..30; PAUSE; RESUME
+
+Python -> Arduino:
+PING
+SPEED,5
+LIMIT,250
+HOLD,3
+
+Arduino -> Python:
+READY,SPECTRA_RADAR_360
+CONFIG,SPEED,5
+CONFIG,LIMIT,250.0
+CONFIG,HOLD,3
+
+Normal scan telemetry example:
+RADAR,45.0,318.4,0,1,0,5,0,250.0,3
+RADAR,47.2,301.7,0,1,0,5,0,250.0,3
+
+Object detection example:
+EVENT,OBJECT_DETECTED,48.1,42.5
+RADAR,48.1,42.5,1,1,0,5,3000,250.0,3
+RADAR,48.1,42.5,1,1,0,5,1800,250.0,3
+
+Clear confirmation / resume example:
+EVENT,OBJECT_CLEARED,48.1,-1.0
+RADAR,48.1,-1.0,0,1,0,5,0,250.0,3
+
+Manual pause examples:
+Python -> Arduino: PAUSE
+Arduino -> Python: STATE,PAUSED
+
+Python -> Arduino: RESUME
+Arduino -> Python: STATE,SCANNING
+
+End of representative transcript.
 
