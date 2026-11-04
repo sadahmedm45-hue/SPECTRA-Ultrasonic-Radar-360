@@ -163,7 +163,7 @@ The ultrasonic sensor reports distance, not object identity. It may miss angled,
 Mechatronics Engineering · Faculty of Engineering · Dhamar University
 
 <p align="center">
-  <img src="assets/images/profile-avatar.png" alt="Project author profile image" width="112">
+  <img src="assets/images/radar-alert.png" alt="Project author profile image" width="112">
 </p>
 
 ---
