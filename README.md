@@ -31,7 +31,7 @@ A 28BYJ-48 stepper motor rotates the HC-SR04 ultrasonic sensor through a full-re
 
 | Normal scan | Object detected |
 |---|---|
-| ![Normal SPECTRA interface](assets/images/radar-interface.png) | ![SPECTRA detection alert](assets/images/radar-alert.png) |
+| ![Normal SPECTRA interface](assets/images/radar-interface.png) | ![SPECTRA detection alert](assets/images/radar-aler.png) |
 
 The screenshots are interface previews. A live session follows Arduino telemetry; demo animation is shown before a serial connection is established.
 
